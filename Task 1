@@ -1,0 +1,106 @@
+Qn-1. Create three variables in a single line and assign different values to them and make sure their data types are different.
+Like one is int, another one is float and the last one is a string.
+
+>>> a,b,name=1,1.5,'Raj'
+>>> a
+1
+>>> b
+1.5
+>>> name
+'Raj'
+>>> 
+
+Qn-2. Create a variable of value type complex and swap it with another variable whose value is an integer.
+
+>>> a = 1
+>>> b = 1+1j
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'complex'>
+>>> c=b
+>>> b=a
+>>> a=c
+>>> a
+(1+1j)
+>>> b
+1
+>>> type(a)
+<class 'complex'>
+>>> type(b)
+<class 'int'>
+>>> type(c)
+<class 'complex'>
+>>> 
+
+Qn-3. Swap two numbers using the third variable as the result name and do the same task without using any third variable.
+
+
+>>> a,b = 5,10
+>>> print('a:',a,'b:',b)
+a: 5 b: 10
+>>> res = a
+>>> a = b
+>>> b = res
+>>> print('a:',a,'b:',b)
+a: 10 b: 5
+
+
+>>> a,b =1,2
+>>> print('a:',a,'b:',b)
+a: 1 b: 2
+>>> a =a +b
+>>> b=a-b
+>>> a=a-b
+>>> print('a:',a,'b:',b)
+a: 2 b: 1
+>>> 
+
+Qn-4. Write a program to print the value given by the user by using both Python 2.x and Python 3.x Version.
+
+for Python 3.x
+>>> name = input('Enter the name : ')
+Enter the name : Raj
+>>> name
+'Raj'
+
+for Python 2.x
+>>> name = raw_input('Enter the name : ')
+Enter the name : Raj
+>>> name
+'Raj'
+
+Qn-5. Write a program to complete the task given below:
+      Ask the user to enter any 2 numbers in between 1-10 and add both of them to another variable call z.
+      Use z for adding 30 into it and print the final result by using variable result.
+
+a,b = input("Enter two numbers between 1 to 20: ").split(",")
+z = int(a) + int(b)
+result = z + 30
+print("result : ", result)
+
+Output:
+Enter two numbers between 1 to 20: 1,4
+result : 35
+
+Qn-6. Write a program to check the data type of the entered values.
+      HINT: Printed output should say -  The input value data type is: int/float/string/etc
+
+>>> a,b,c ='raj',1.5,'rahul'
+>>> ress = input(a)
+raj
+>>> type(a)
+<class 'str'>
+>>> 
+
+Qn-7. Create Variables using CamelCase, LadderCase and UPPERCASE.
+      (Refer:   https://capitalizemytitle.com/camel-case/) - Variable Conventions to write
+
+>>> CamelCase = 1
+>>> camelCase = 2
+>>> CAMELCASE = 3
+
+Qn-8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’ again.
+      Will it change the value? If Yes then Why?
+
+Yes it will change the value for ‘a’. Because memory location will remains the same for ‘a’.
